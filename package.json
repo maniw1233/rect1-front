@@ -2,7 +2,8 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000"
+  "proxy": "http://localhost:8000",
+  "homepage":"https://maniw1233.github.io/mern-shop-frontend"
 ,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -31,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+      "predeploy": "npm run build -r https://maniw1233.github.io/mern-shop-frontend",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
